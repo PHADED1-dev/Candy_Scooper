@@ -1,0 +1,1 @@
+window.onload = function() { console.log('Game loaded'); /* Basic game setup would go here */ };

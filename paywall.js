@@ -1,0 +1,1 @@
+console.log('Paywall check initialized'); // PayPal button or Paywall feature would go here

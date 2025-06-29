@@ -1,1 +1,24 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Candy Scooper</title><link rel='manifest' href='manifest.json'><link rel='stylesheet' href='style.css'><script src='game.js'></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('service-worker.js').then(reg => console.log('Service Worker registered 🎉', reg)).catch(err => console.error('Service Worker error 😓', err)); }</script></head><body><h1>🍬 Candy Scooper - Beta Deploy</h1><canvas id='gameCanvas'></canvas><script src='paywall.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Candy Scooper</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('Service Worker registered 🎉', reg))
+        .catch(err => console.error('Service Worker error 😓', err));
+    }
+  </script>
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+  </div>
+
+  <script src="paywall.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

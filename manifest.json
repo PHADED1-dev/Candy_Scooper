@@ -1,8 +1,10 @@
+
 {
   "name": "Candy Scooper",
   "short_name": "Scooper",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "description": "A fun candy scooping game!"
+  "background_color": "#fff0f5",
+  "description": "A sweet little scooping game!",
+  "icons": []
 }

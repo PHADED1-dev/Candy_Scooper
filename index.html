@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <title>Candy Scooper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="style.css" />
+  <script src="paywall.js" defer></script>
+  <script src="game.js" defer></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
@@ -14,11 +17,13 @@
   </script>
 </head>
 <body>
-  <div id="game-container">
-    <canvas id="gameCanvas"></canvas>
+  <h1>🍬 Candy Scooper</h1>
+  <div id="paywall">
+    <p>Please support the game to unlock full access!</p>
+    <a href="https://www.paypal.me/phaded91" target="_blank">
+      <button>💳 Unlock with PayPal</button>
+    </a>
   </div>
-
-  <script src="paywall.js"></script>
-  <script src="game.js"></script>
+  <canvas id="gameCanvas" width="360" height="640" style="display:none;"></canvas>
 </body>
 </html>

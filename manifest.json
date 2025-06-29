@@ -4,5 +4,7 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
-  "description": "A fun candy scooping game!"
+  "theme_color": "#ff69b4",
+  "description": "A fun candy scooping game!",
+  "icons": []
 }

@@ -1,13 +1,20 @@
-<!-- Candy Scooper Final Beta Deploy - Placeholder HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Candy Scooper</title>
+  <link rel="manifest" href="manifest.json" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('Service Worker registered 🎉', reg))
+        .catch(err => console.error('Service Worker error 😓', err));
+    }
+  </script>
 </head>
 <body>
   <h1>🍬 Candy Scooper - Beta Deploy</h1>
-  <p>This is a placeholder. The full game logic, visuals, and music will be added in the next build drop.</p>
+  <p>This is a placeholder. The full game is loading!</p>
   <p>Check back soon for more sugar!</p>
 </body>
 </html>
